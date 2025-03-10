@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,16 +53,14 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+        travel: {
+          dark: '#142940',
+          medium: '#1e3a57',
+          light: '#2a4d70',
+          accent: '#2dd4bf',
+          green: '#10b981',
+          card: 'rgba(20, 41, 64, 0.8)'
+        }
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,12 +83,49 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(10px)'
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)'
+          }
+        },
+        'blur-in': {
+          '0%': {
+            opacity: '0',
+            filter: 'blur(10px)'
+          },
+          '100%': {
+            opacity: '1',
+            filter: 'blur(0)'
+          }
+        },
+        'shimmer': {
+          '0%': {
+            backgroundPosition: '-500px 0'
+          },
+          '100%': {
+            backgroundPosition: '500px 0'
+          }
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
-			}
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'fade-in': 'fade-in 0.6s ease-out forwards',
+        'fade-in-delay-1': 'fade-in 0.6s ease-out 0.2s forwards',
+        'fade-in-delay-2': 'fade-in 0.6s ease-out 0.4s forwards',
+        'fade-in-delay-3': 'fade-in 0.6s ease-out 0.6s forwards',
+        'blur-in': 'blur-in 0.8s ease-out forwards',
+        'shimmer': 'shimmer 2s infinite linear'
+			},
+      backgroundImage: {
+        'travel-gradient': 'linear-gradient(to right, rgba(20, 41, 64, 0.8), rgba(42, 77, 112, 0.8))'
+      }
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
