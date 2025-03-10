@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Search, Loader2 } from 'lucide-react';
+import { Search } from 'lucide-react';
 
 const SearchSidebar = () => {
   return (
@@ -38,14 +38,6 @@ const SearchSidebar = () => {
                 <RatingCheckbox rating={1} />
               </div>
             </div>
-          </div>
-        </div>
-        
-        <div className="pt-4 border-t border-white/10">
-          <p className="text-gray-300 mb-2">Search Results</p>
-          <div className="flex items-center text-gray-400 space-x-2">
-            <Loader2 className="animate-spin" size={16} />
-            <span>Loading...</span>
           </div>
         </div>
       </div>
