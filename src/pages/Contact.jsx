@@ -85,15 +85,7 @@ const Contact = () => {
   );
 };
 
-const ContactInfo = ({ 
-  icon, 
-  title, 
-  info 
-}: { 
-  icon: React.ReactNode; 
-  title: string; 
-  info: string 
-}) => {
+const ContactInfo = ({ icon, title, info }) => {
   return (
     <div className="flex items-start">
       <div className="text-travel-accent mr-3 mt-1">{icon}</div>

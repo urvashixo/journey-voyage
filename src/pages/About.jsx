@@ -53,15 +53,7 @@ const About = () => {
   );
 };
 
-const FeatureCard = ({ 
-  icon, 
-  title, 
-  description 
-}: { 
-  icon: React.ReactNode; 
-  title: string; 
-  description: string 
-}) => {
+const FeatureCard = ({ icon, title, description }) => {
   return (
     <div className="bg-travel-light/40 backdrop-blur-sm rounded-lg p-5 border border-white/10 transition-all duration-300 hover:transform hover:scale-105">
       <div className="text-travel-accent mb-3">{icon}</div>

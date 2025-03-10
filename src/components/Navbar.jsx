@@ -23,7 +23,7 @@ const Navbar = () => {
   );
 };
 
-const NavLink = ({ to, children }: { to: string; children: React.ReactNode }) => (
+const NavLink = ({ to, children }) => (
   <Link
     to={to}
     className="text-gray-300 transition-all duration-300 hover:text-white hover:text-glow"

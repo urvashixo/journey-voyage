@@ -45,14 +45,14 @@ const SearchSidebar = () => {
   );
 };
 
-const PriceCheckbox = ({ label }: { label: string }) => (
+const PriceCheckbox = ({ label }) => (
   <label className="flex items-center space-x-2 group cursor-pointer">
     <input type="checkbox" className="rounded text-travel-accent focus:ring-travel-accent/50" />
     <span className="text-gray-300 group-hover:text-white transition-colors">{label}</span>
   </label>
 );
 
-const RatingCheckbox = ({ rating }: { rating: number }) => (
+const RatingCheckbox = ({ rating }) => (
   <label className="flex items-center space-x-2 group cursor-pointer">
     <input type="checkbox" className="rounded text-travel-accent focus:ring-travel-accent/50" />
     <div className="flex items-center">
